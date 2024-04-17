@@ -67,5 +67,7 @@ To run the bonus part, use ```make bonus``` command and run the bonus program wi
 ./so_long_bonus map_bonus.ber
 ```
 In the ```map_bonus.ber``` file, enemy patrols are represented by the **H** and **V** characters depending on whether they move horizontally or vertically.
+
+If you have a QWERTY keyboard you can change keys in ```srcs/so_long.h``` and in ```srcs_bonus/so_long_bonus.h```.
 ***
 Made by Thibaut Charpentier: <thibaut.charpentier42@gmail.com>
