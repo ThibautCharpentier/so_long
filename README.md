@@ -54,7 +54,7 @@ LIBS_HOME = -Llibft -lft -Llibmlx -lmlx -L/usr/lib -lXext -lX11 -lm -lz
 INCLUDES_42 = -Ilibft -I/usr/X11/include -Ilibmlx
 LIBS_42 = -Llibft -lft -Llibmlx -lmlx -L/usr/X11/lib -lXext -lX11 -lm -lz
 ```
-You must choose the right configuration according to the structure of your system (perhaps the two possible configurations above will not correspond). I recommend you to follow the link I wrote above.
+You must choose the right configuration according to the structure of your system and your OS (perhaps the two possible configurations above will not correspond). I recommend you to follow the link I wrote above.
 If you use **libmlx**, the right ```-I/usr/*/include``` and ```-L/usr/*/lib``` should match with the first line ```INC=/usr/*/include``` of the ```libmlx/Makefile.gen``` file.
 Otherwise, if you use **libmlx_mac**, you have to change the LIBMLX parameter with this line ```LIBMLX = libmlx_mac```.
 
