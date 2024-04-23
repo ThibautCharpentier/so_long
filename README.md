@@ -35,7 +35,7 @@ This project contains a **libft** folder which is a library that we had to creat
 
 The **mlx_linux** is the MiniLibX library. It is a tiny graphics library which allows us to do the most basic things for rendering something in screen.
 
-There are also two **.ber** files we can use as a first argument for running the program.
+There is also a **map** folder which contains **.ber** files we can use as a first argument for running the program.
 
 ## Usage
 
@@ -59,14 +59,14 @@ The right ```-I/usr/*/include``` and ```-L/usr/*/lib``` should match with the fi
 
 If everything looks correct, use ```make``` command to compile the project then run the program with:
 ```
-./so_long map.ber
+./so_long map/map.ber
 ```
 
 To run the bonus part, use ```make bonus``` command and run the bonus program with:
 ```
-./so_long_bonus map_bonus.ber
+./so_long_bonus map/map_bonus.ber
 ```
-In the ```map_bonus.ber``` file, enemy patrols are represented by the **H** and **V** characters depending on whether they move horizontally or vertically.
+In the ```map/map_bonus.ber``` file, enemy patrols are represented by the **H** and **V** characters depending on whether they move horizontally or vertically.
 
 If you have a QWERTY keyboard you can change keys in ```srcs/so_long.h``` and in ```srcs_bonus/so_long_bonus.h```.
 ***
