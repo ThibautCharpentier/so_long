@@ -15,7 +15,7 @@
 # define SO_LONG_H
 
 # include "../libft/libft.h" // contains unistd, stdarg, stdlib
-# include "../mlx_linux/mlx.h"
+# include "../libmlx/mlx.h"
 # include <fcntl.h>
 
 # define ESC 65307 // ESC key

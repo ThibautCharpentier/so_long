@@ -33,7 +33,7 @@ The program must take as a first argument a map description file with the **.ber
 
 This project contains a **libft** folder which is a library that we had to create as the first 42 school project. This folder also includes files corresponding to the following 42 school project: **ft_printf** and **get_next_line**.
 
-The **mlx_linux** is the MiniLibX library. It is a tiny graphics library which allows us to do the most basic things for rendering something in screen.
+The **libmlx** is the MiniLibX library. It is a tiny graphics library which allows us to do the most basic things for rendering something in screen. The **libmlx_mac** is the version for Mac OS.
 
 There is also a **map** folder which contains **.ber** files we can use as a first argument for running the program.
 
@@ -41,9 +41,9 @@ There is also a **map** folder which contains **.ber** files we can use as a fir
 
 Before running the project, you have to set up your MinilibX. Here you will find everything you need to make the library work according to your OS: <https://harm-smits.github.io/42docs/libs/minilibx/getting_started.html#installation>.
 
-Then, make sure that the MinilibX works by running a test. Use ```make mlx_linux``` command to compile the library then run the test with:
+If you use **libmlx**, make sure that the MinilibX works by running a test. Use ```make libmlx``` command to compile the library then run the test with:
 ```
-./mlx_linux/test/run_tests.sh
+./libmlx/test/run_tests.sh
 ```
 
 If the test works, now pay attention to the following lines in the Makefile file:
@@ -55,7 +55,8 @@ INCLUDES_42 = -Ilibft/ -I/usr/X11/include -Imlx_linux
 LIBS_42 = -Llibft -lft -Lmlx_linux -lmlx -L/usr/X11/lib -lXext -lX11 -lm -lz
 ```
 You must choose the right configuration according to the structure of your system (perhaps the two possible configurations above will not correspond). I recommend you to follow the link I wrote above.
-The right ```-I/usr/*/include``` and ```-L/usr/*/lib``` should match with the first line ```INC=/usr/*/include``` of the ```mlx_linux/Makefile.gen``` file.
+If you use **libmlx**, the right ```-I/usr/*/include``` and ```-L/usr/*/lib``` should match with the first line ```INC=/usr/*/include``` of the ```libmlx/Makefile.gen``` file.
+Otherwise, if you use **libmlx_mac**, you have to change the LIBMLX parameter with this line ```LIBMLX = libmlx_mac```.
 
 If everything looks correct, use ```make``` command to compile the project then run the program with:
 ```
