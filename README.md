@@ -48,11 +48,11 @@ If you use **libmlx**, make sure that the MinilibX works by running a test. Use 
 
 If the test works, now pay attention to the following lines in the Makefile file:
 ```
-INCLUDES_HOME = -Ilibft/ -I/usr/include -Imlx_linux
-LIBS_HOME = -Llibft -lft -Lmlx_linux -lmlx -L/usr/lib -lXext -lX11 -lm -lz
+INCLUDES_HOME = -Ilibft -I/usr/include -Ilibmlx
+LIBS_HOME = -Llibft -lft -Llibmlx -lmlx -L/usr/lib -lXext -lX11 -lm -lz
 
-INCLUDES_42 = -Ilibft/ -I/usr/X11/include -Imlx_linux
-LIBS_42 = -Llibft -lft -Lmlx_linux -lmlx -L/usr/X11/lib -lXext -lX11 -lm -lz
+INCLUDES_42 = -Ilibft -I/usr/X11/include -Ilibmlx
+LIBS_42 = -Llibft -lft -Llibmlx -lmlx -L/usr/X11/lib -lXext -lX11 -lm -lz
 ```
 You must choose the right configuration according to the structure of your system (perhaps the two possible configurations above will not correspond). I recommend you to follow the link I wrote above.
 If you use **libmlx**, the right ```-I/usr/*/include``` and ```-L/usr/*/lib``` should match with the first line ```INC=/usr/*/include``` of the ```libmlx/Makefile.gen``` file.
