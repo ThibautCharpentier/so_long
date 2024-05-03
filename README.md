@@ -1,5 +1,9 @@
 # so_long
 
+<p align="center">
+  <img src="https://github.com/ThibautCharpentier/so_long/blob/main/gif/so_long.gif" width="480"/>
+</p>
+
 so_long is an individual 42 school graphic design project where we have to create a small 2D game. We control a hero who must collect any valuables before leaving the place.
 
 ## Status
